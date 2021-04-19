@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/
+     4.0.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/
+     jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/
+     popper.js/1.12.9/umd/popper.min.js">
+    </script>
+    <title>Login</title>
+  </head>
+  <body class="bg-nav">
+    <nav class="navbar">
+        <a href="" class="navbar-brand text-light">Sentiment Analysis</a>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="text-light display-4 mt-100" style="font-size: 80px; font-weight: bold"> Welcome to this Twitter Sentiment Analysis! </h1>
+        </div>
+        <div class="col-md-4">
+          <div class="card mt-100">
+            <div class="card-body">
+              <form method="post" action="login_validation">
+                <div class="form_group">
+                <label> Email </label><br>
+                <input type="email" class="form-control" name="email"  id="email"> <br>
+                  <small id="emailvalid" class="form-text
+                text-muted invalid-feedback">
+                    Your email must be a valid email
+              </small>
+                </div>
+                <div class="form_group">
+                <label> Password </label><br>
+                <input type="password" class="form-control" name="password" id="password"><br>
+                  <h5 id="passcheck" style="color: red;">
+                **Please Fill the password
+              </h5>
+                </div>
+                <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+              </form> <br>
+              <p> Not a member? <a href="/register"> Create Account</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <script src="/static/app.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
